@@ -1,0 +1,8 @@
+.custom-toast {
+  @apply font-sans rounded-lg shadow-lg p-4;
+}
+
+.custom-toast-body {
+  @apply font-sans flex items-center justify-center text-sm;
+}
+  

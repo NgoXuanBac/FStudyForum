@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
+.yarl__button[aria-label="Zoom in"]:disabled div,
+.yarl__button[aria-label="Zoom out"]:disabled div {
+    color: rgba(189 189 189 /1) !important
+}
+.yarl__slide_image {
+    width: 100%;
+}
+
+
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        width: 6px;
+    }
+    .scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 0.5rem;
+    }
+    .scrollbar:hover::-webkit-scrollbar-thumb {
+        background: #cfd8dc;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+}
